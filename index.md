@@ -13,13 +13,9 @@ Welcome to the official VectoTask legal information page.
 
 ## Contact Us
 
-For privacy-related questions:
+For privacy-related questions and technical support:
 
-YOUR PRIVACY EMAIL
-
-For technical support:
-
-YOUR SUPPORT EMAIL
+VectoTask@gmail.com
 
 ---
 
