@@ -91,12 +91,11 @@ Nothing in this Agreement excludes or limits mandatory consumer guarantees, stat
 
 ## 8. Limitation of Liability
 
-To the maximum extent permitted by applicable law:
+To the extent permitted by applicable law, users are responsible for reviewing and supervising the workflows they create and execute using VectoTask.
 
-[Liability limitations and exclusions to be completed following legal review.]
+Publisher makes no guarantee that every automation will operate without interruption or error.
 
-Nothing in this Agreement excludes or limits liability that cannot legally be excluded or limited. Nothing in this Agreement removes mandatory consumer rights or remedies.
-
+Nothing in this Agreement excludes or limits any liability, consumer rights, or statutory protections that cannot legally be excluded or limited.
 ## 9. Termination
 
 You may terminate this Agreement at any time by uninstalling the Software and ceasing all use of it.
@@ -111,10 +110,11 @@ Uninstalling the Software may not automatically remove all information saved out
 
 ## 10. Governing Law and Disputes
 
-[To be completed after confirming the publisher's legal jurisdiction and obtaining legal review.]
+This Agreement is governed by the laws of India, subject to mandatory consumer protection laws and rights applicable in the user's country or region.
 
-Nothing in this section limits mandatory consumer protections or legal rights that apply in your country or region.
+Disputes relating to this Agreement will be handled by the competent courts or other legally authorized bodies, as applicable.
 
+Nothing in this section limits any consumer rights or legal protections that cannot be excluded under applicable law.
 ## 11. General Terms
 
 If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions will continue to apply to the extent permitted by law.
