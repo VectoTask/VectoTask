@@ -128,25 +128,6 @@ Confirm the current requirements directly in Partner Center when preparing the s
 
 ---
 
-## Publication Status
-
-**Current status: Internal review draft**
-
-Before making this repository public:
-
-- [ ] Complete all document placeholders.
-- [ ] Verify publisher identity and contact information.
-- [ ] Confirm the final application version.
-- [ ] Audit the exact release package.
-- [ ] Reconcile third-party dependencies and licences.
-- [ ] Verify privacy and data-handling disclosures.
-- [ ] Review the EULA and Privacy Policy.
-- [ ] Remove internal-only evidence and development notes from public materials.
-- [ ] Publish the approved legal documents.
-- [ ] Verify all public links.
-
----
-
 **VectoTask**
 
 *Automate. Simplify. Achieve.*
