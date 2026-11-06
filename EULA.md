@@ -2,7 +2,7 @@
 
 **Status:** Draft — business and legal details must be completed before publication.
 
-**Effective date:** 6 November 2026]  
+**Effective date:** 6 November 2026 
 **Software:** VectoTask for Windows, version 1.0.6  
 **Publisher/Licensor:** Harshvardhan Yadav
 
