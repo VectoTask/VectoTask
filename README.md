@@ -9,12 +9,6 @@ Project identity: VectoTask (formerly FlowPilot)
 
 This repository contains the legal documentation and compliance preparation materials for VectoTask, a Windows desktop workflow automation application.
 
-The source review was performed against the project located at:
-
-`C:\Users\harsh\.gemini\antigravity\scratch\FlowPilot\`
-
-The review involved reading source and build files only. No application source code, release build, or configuration was changed.
-
 This is a working publication package. Some source behavior is established below, but this was a bounded source review, not an independent network capture, package certification, security review, or legal audit.
 
 Complete the remaining fields and verify all disclosures against the exact release build and actual Microsoft Partner Center package before publication.
