@@ -1,27 +1,40 @@
 # VectoTask Third-Party Notices
 
-**Draft inventory based on project declarations; reconcile against the exact Store package before distribution.** The project has a `THIRD_PARTY_LICENSES.md` that says license materials are bundled with builds. The source project metadata and license file do not fully establish exact versions, transitive dependencies, or which listed components are included in the submitted MSIX.
+**Version:** Draft — pending final package verification
 
-## Components identified by project materials
+VectoTask uses or references third-party software and resources. Their respective authors and licensors retain their rights to those components. This document identifies components declared in the project materials; it does not confirm that every listed component is included in every VectoTask distribution.
 
-| Component | Role / evidence | Declared license / notice | Release verification required |
+The exact versions, transitive dependencies, and contents of the submitted Microsoft Store package must be verified before distribution. The project includes a `THIRD_PARTY_LICENSES.md` file that is intended to provide license texts and notices.
+
+## Components identified in project materials
+
+| Component | Purpose / project evidence | License declared by project | Verification status |
 |---|---|---|---|
-| PySide6, Shiboken6, Qt 6 | Runtime UI; `pyproject.toml` declares `PySide6>=6.6.0`; project notice says dynamically linked. | LGPLv3 (project-declared) | Capture exact Qt/PySide versions, binary linkage and modifications; include full license and relinking/replacement information required by the applicable LGPL version. |
-| psutil | Runtime process/system monitoring; `pyproject.toml` declares `psutil>=5.9.0`. | BSD 3-Clause (project-declared) | Verify version and include complete copyright, conditions, and disclaimer. |
-| winsdk | StoreContext and StartupTask projections are referenced by source/build documents; project notice declares MIT. Not listed as a direct dependency in `pyproject.toml`. | MIT (project-declared) | Verify included module/package and exact license/copyright notice in the packaged build. |
-| Pillow | Used in the MSIX asset-generation script; project notice declares HPND. | HPND (project-declared) | Determine whether any Pillow code ships in the final app or was only a build-time tool; include notice if redistributed. |
-| Python 3.11+ / standard library | Runtime declared in project metadata; README says Python 3.12+. | PSF license (project-declared) | Confirm actual bundled interpreter/runtime version and include applicable license notices. |
-| SQLite / `sqlite3` | Local database; project notice says SQLite public domain. | Public domain dedication (project-declared) | Verify actual SQLite version/build and include any applicable notice. |
-| Lucide icons | Project notice declares embedded SVG path coordinates. | ISC (project-declared) | Verify icons/assets and required copyright/license text. |
+| PySide6, Shiboken6, Qt 6 | User interface runtime. `pyproject.toml` declares `PySide6>=6.6.0`; project notices describe dynamic linking. | LGPLv3 (project-declared) | Exact versions, linkage, modifications, and applicable license obligations require verification. |
+| psutil | Process and system monitoring. `pyproject.toml` declares `psutil>=5.9.0`. | BSD 3-Clause (project-declared) | Exact version and complete required copyright, conditions, and disclaimer require verification. |
+| winsdk | StoreContext and StartupTask functionality are referenced in project source/build materials. It is not listed as a direct dependency in `pyproject.toml`. | MIT (project-declared) | Inclusion in the final package, exact version, and applicable notice require verification. |
+| Pillow | Referenced by the MSIX asset-generation script. | HPND (project-declared) | Determine whether Pillow is distributed with the application or used only as a build-time tool. |
+| Python 3.11+ / standard library | Runtime requirement declared in project metadata; the project README refers to Python 3.12+. | PSF license (project-declared) | Confirm the bundled interpreter version and applicable license materials. |
+| SQLite / `sqlite3` | Used for the local database. | Public domain (project-declared) | Confirm the SQLite version/build and any applicable notices. |
+| Lucide icons | Project materials describe embedded SVG path data. | ISC (project-declared) | Verify the assets included in the distribution and provide the required license notice. |
 
-## Notice text and source
+## License texts and attribution
 
-The project-root file `THIRD_PARTY_LICENSES.md` should be reviewed as the starting point for full component license texts and notices. Its current statements, dates, and exact distribution claims have not been independently verified. The submitted package should contain complete required texts and attribution in a customer-accessible location.
+The project-root file `THIRD_PARTY_LICENSES.md` is the starting point for the full license texts and notices.
 
-## Final-package steps
+The final distributed version of this document and the accompanying license materials must be checked against the exact application package. License names and component references in project materials should not be treated as independent confirmation of package contents or legal compliance.
 
-1. Generate a full direct and transitive software bill of materials from the exact packaged build, including PyInstaller-bundled modules, Python, Qt DLLs/plugins, and redistributables.
-2. Identify build-time tools separately from components shipped to customers.
-3. Compare the package contents to every item above and remove false/unshipped entries; add all missing libraries, fonts, icons, images, codecs, and runtimes.
-4. Verify versions, copyright notices, license texts, modifications, dynamic-linking/relinking obligations, and redistribution requirements. Confirm that the package satisfies each component's terms, especially LGPL requirements and asset rights.
-5. Publish the final notices at [PUBLIC HTTPS URL] and include them in the MSIX/install folder if required by license terms.
+Where required by the applicable license terms, VectoTask distributions must provide the relevant copyright notices, license texts, disclaimers, and other required materials in a customer-accessible location.
+
+## Distribution-specific information
+
+Third-party components may differ between development builds and distributed packages. Some tools may be used only during development or asset generation and may not be included in the application.
+
+The final notices should therefore reflect the components actually redistributed with the specific VectoTask release, rather than assuming that every development dependency is shipped to customers.
+
+## Contact
+
+For questions about third-party notices, contact:
+
+**VectoTask@gmail.com**
+
