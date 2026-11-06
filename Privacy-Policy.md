@@ -1,75 +1,145 @@
-# VectoTask Privacy Policy
+# VectoTask End User License Agreement
 
-**Effective date:** [DATE]  
-**App version covered:** [SUBMITTED VERSION]  
-**Publisher / responsible entity:** [LEGAL PUBLISHER NAME AS SHOWN IN PARTNER CENTER]  
-**Privacy contact:** [REAL EMAIL OR HTTPS CONTACT PAGE]  
-**Markets:** [COUNTRIES/REGIONS]
+**Status:** Draft — business and legal details must be completed before publication.
 
-## 1. About this policy
+**Effective date:** [EFFECTIVE DATE]  
+**Software:** VectoTask for Windows, version 1.0.6  
+**Publisher/Licensor:** Harshvardhan Yadav
 
-This policy explains information handling by **VectoTask**, a Windows desktop application for creating and running local workflow automations. The reviewed project describes VectoTask as formerly named FlowPilot. This policy covers the app and its publisher, [PUBLISHER NAME], for the [Microsoft Store/MSIX version — confirm] version. Microsoft independently handles information under Microsoft's own terms when you use Microsoft Store services; this policy does not replace Microsoft's privacy statement.
+This End User License Agreement ("Agreement") governs your installation and use of VectoTask ("Software"). It is an agreement between you and **Harshvardhan Yadav** ("Publisher").
 
-## 2. Information VectoTask stores on your device
+By installing or using the Software, you agree to this Agreement. If you do not agree, do not install or use the Software.
 
-The reviewed source uses SQLite and local files. Depending on your app use, the database can include:
+## 1. License Grant
 
-- Workflows and visual workflow graphs, including trigger settings, conditions, actions, node configuration, names and descriptions.
-- Workflow drafts and autosaves, including graph and view state.
-- App settings, theme/layout preferences, automation preferences, and Store update dismissal settings.
-- Keyboard shortcuts and their configured actions.
-- Activity records such as workflow name, trigger type/details, status, actions performed, error messages, start/end times, and duration.
-- Application logs. Logs can include operational messages, process names or workflow details, file paths, errors, and diagnostic/environment information.
+Subject to this Agreement and applicable law, Publisher grants you a limited, non-exclusive, non-transferable license to install and use the Software on Windows devices that you own or control.
 
-The database and log files are stored locally under the environment-specific application data directory, normally `%LOCALAPPDATA%\VectoTask\msix` for the MSIX build, `%LOCALAPPDATA%\VectoTask\standalone` for the standalone build, and `%LOCALAPPDATA%\VectoTask\dev` for development. If `%LOCALAPPDATA%` is unavailable, the source uses a folder under the current user's home directory. The app creates database, drafts, logs, backups, and exports subfolders. Existing legacy VectoTask/FlowPilot data may be migrated from `~/.vectotask` or `~/.flowpilot` into the active data directory, with a migration backup.
+Permitted use: Personal and authorized Business Productivity Use.
 
-The source does not show encryption of the SQLite database, logs, or backup archives. Treat local app data and exported backup ZIP files as ordinary files accessible to the Windows user and anyone else who can access that Windows account/device. Do not store secrets in workflows unless you accept that risk.
+License type: Free, perpetual license.
 
-The app has user-requested export/import and backup behavior. The source does not establish an automatic expiry period for these records. Activity history can be cleared in the app; deleting an individual workflow/draft is supported. Logs, backups, and old exports may remain until the user deletes them or other cleanup behavior is confirmed. Uninstall behavior for data stored outside the installation directory has not been verified; back up or manually remove app data if desired, after confirming what will be lost.
+If you obtain the Software through Microsoft Store, your purchase, installation, and use are also subject to the applicable Microsoft Store terms.
 
-## 3. Information used by local automation features
+## 2. Restrictions and Responsibilities
 
-When enabled/configured, local automation features may inspect running process names and state, keyboard shortcuts, selected files/folders, active application/window information, and system state to trigger workflows or perform actions. The project source includes process monitoring, global hotkeys, window/app discovery, file/folder actions, desktop startup integration, and workflow activity logging. These operations are performed on the device by the app, but resulting workflow details may be written to the local database or log as described above.
+Except where applicable law permits or this Agreement expressly allows, you may not:
 
-Automations can launch or close programs, open URLs in the default browser, manipulate keyboard/mouse input, and act on user-selected files or folders. You choose workflow settings and are responsible for their effects. Review workflows before enabling automatic execution.
+- Copy, modify, or create derivative works of the Software.
+- Reverse engineer, decompile, or disassemble the Software.
+- Rent, lease, sublicense, sell, or redistribute the Software.
+- Remove or alter proprietary notices included with the Software.
 
-## 4. Network communication
+You must not use the Software unlawfully or in a way that infringes another person's rights. Nothing in this section restricts rights that cannot legally be restricted.
 
-The reviewed source includes these network-related behaviors:
+You are responsible for the workflows you create, configure, and execute. You must only automate systems, accounts, files, applications, and services that you are authorized to access and control.
 
-- **Connectivity condition:** When a workflow evaluates the internet-connectivity condition, the app attempts a TCP connection to `8.8.8.8` on port 53 with a short timeout. This contacts Google's public DNS service to determine whether a connection succeeds. The source does not send workflow content as part of this check. Network provider logs/metadata may be governed by that provider's terms.
-- **Microsoft Store update discovery:** In an MSIX installation, the app calls Windows `StoreContext` APIs after launch and periodically (the code sets a 24-hour timer) to ask whether app/package updates are available. The request is handled through Windows/Microsoft Store services. The project source does not specify the precise account/device/package data Microsoft processes; consult Microsoft's privacy materials. The code also opens a Microsoft Store URI when a user chooses to view the app in the Store. Standalone builds skip these Store update checks.
-- **User-configured HTTP/webhook nodes:** Definitions for HTTP request and webhook nodes exist in the workflow registry, but the reviewed source did not reveal a working request executor for them. Therefore this policy does not represent that these nodes currently transmit payloads. Their status and behavior must be confirmed against the exact release package; if executable, this section must be revised to explain recipients and data sent.
-- **Other destinations:** The app can open URLs supplied by the user in the default web browser. Any resulting browser/service communication is controlled by the browser and destination service. No app-server analytics or telemetry endpoint was identified in the reviewed source, but bundled components and the final release package must still be audited before making a broader “no telemetry” claim.
+Before enabling automatic execution, review your workflows and understand the actions they may perform. You are responsible for complying with applicable laws, permissions, and third-party service terms.
 
-## 5. Purposes and sharing
+## 3. Ownership and Third-Party Components
 
-Local information is used to provide the app's workflow, settings, activity history, logging, backup/restore, and update-notification features. The source review found no VectoTask-operated cloud account or service. Microsoft Store update queries and the connectivity check described above are network communications. If user-configured request integrations become executable, their external services will be selected by the user and require separate disclosure here.
+The Software is licensed, not sold. Publisher or its licensors retain ownership of the Software and all rights not expressly granted under this Agreement.
 
-The publisher does not receive the locally stored workflow/database contents through a publisher-operated server in the reviewed source. This statement is limited to the reviewed code and does not describe information a user deliberately sends to an external service through a workflow or browser, or information handled by Microsoft Store/Windows.
+The Software may include third-party software and resources governed by separate license terms. Those terms continue to apply to their respective components and take precedence where required by their licenses.
 
-## 6. Retention and deletion
+Third-party license information is available at:
 
-Local records remain on the device until deleted by the user or otherwise removed. The reviewed code does not define a general retention schedule or automatic log rotation. Users can clear the app's activity history and delete workflows/drafts in the app; users can also export/import data. To request deletion of app data, [PROVIDE VERIFIED IN-APP OR FILESYSTEM INSTRUCTIONS AND CONTACT]. Confirm installer uninstall behavior and any retained app-data behavior before publication.
+https://VectoTask.github.io/VectoTask/Third-Party-Notices
 
-## 7. Security
+## 4. Privacy and Local Data
 
-VectoTask stores the described data in local SQLite files and logs. The source reviewed does not show encryption at rest, a cloud backup, or a publisher server storing these records. Protect your Windows account and device, and handle exported backup files carefully. No method of storage or transmission can be guaranteed completely secure.
+Your use of the Software is also subject to the VectoTask Privacy Policy:
 
-## 8. Your choices and rights
+https://VectoTask.github.io/VectoTask/Privacy-Policy
 
-You choose whether to create workflows, configure automatic triggers, export backups, and use external URLs. You can disable automation and clear activity history using app controls. For privacy requests concerning information handled by the publisher, contact [PRIVACY CONTACT]. Because the reviewed source shows local storage and no publisher-operated account/service, the publisher may not possess a copy of your local workflow data. Rights and remedies depend on your location; [PUBLISHER: add required local rights and regulator contact information for target markets].
+The Software stores certain application information locally, including workflows, settings, activity records, and logs. Some versions may also communicate with external services for functions such as Microsoft Store update discovery and connectivity checks.
 
-## 10. International processing
+The Privacy Policy describes the data handled by the Software, its storage locations, and its network-related behavior.
 
-VectoTask's reviewed workflow database and logs are stored on the user's device. Microsoft Store update discovery and user-chosen external services may involve processing outside the user's country. [ADD verified destinations and safeguards as required for target markets.]
+Please review the Privacy Policy before installing or using the Software.
 
-## 11. Changes and contact
+## 5. Updates and Support
 
-We may update this policy to reflect changes in the app or applicable requirements. The current policy will be available at [PUBLIC HTTPS PRIVACY POLICY URL]. [DESCRIBE notice for material changes, if applicable.]
+The Microsoft Store version may query Microsoft Store services to discover available application updates. Microsoft Store controls the delivery and installation of Store-distributed updates.
 
-Privacy questions: **[PUBLISHER LEGAL NAME]**, [POSTAL ADDRESS IF REQUIRED], [PRIVACY EMAIL], [HTTPS SUPPORT PAGE].
+Standalone versions may have different update behavior.
+
+The Microsoft Store version may query Microsoft Store services to discover available application updates. Microsoft Store controls the delivery and installation of Store-distributed updates. Standalone versions may have different update behavior. Updates may be provided from time to time, subject to the applicable distribution platform and its settings.
+
+For assistance, contact:
+
+**Support email:** VectoTask@gmail.com
+
+Microsoft is not responsible for providing technical support for the Software unless Microsoft separately states otherwise.
+
+## 6. External Services and User-Created Automations
+
+The Software may open URLs in your default browser and interact with Windows, other applications, and external services according to the workflows you configure.
+
+External websites, Microsoft Store services, and other third-party services are operated independently and may have their own terms, privacy policies, availability conditions, and access requirements.
+
+Publisher does not control these external services and is not responsible for their independent content or availability, subject to applicable law.
+
+You are responsible for reviewing external service terms and ensuring that your workflows use appropriate permissions and access rights.
+
+## 7. Warranty Disclaimer
+
+To the maximum extent permitted by applicable law, the Software is provided "as is" and "as available."
+
+Publisher disclaims warranties only to the extent that such disclaimers are legally permitted.
+
+Nothing in this Agreement excludes or limits mandatory consumer guarantees, statutory rights, or remedies that cannot legally be excluded or limited.
+
+## 8. Limitation of Liability
+
+To the maximum extent permitted by applicable law:
+
+[Liability limitations and exclusions to be completed following legal review.]
+
+Nothing in this Agreement excludes or limits liability that cannot legally be excluded or limited. Nothing in this Agreement removes mandatory consumer rights or remedies.
+
+## 9. Termination
+
+You may terminate this Agreement at any time by uninstalling the Software and ceasing all use of it.
+
+Publisher may terminate this Agreement if you materially breach its terms and fail to correct the breach within a reasonable period after receiving notice, where notice and an opportunity to correct the breach are required by applicable law.
+
+Upon termination, you must stop using the Software and uninstall it from your devices. Termination does not affect rights or obligations that arose before termination or provisions that are intended to continue afterward.
+
+Nothing in this section limits any mandatory rights or protections available to consumers under applicable law.
+
+Uninstalling the Software may not automatically remove all information saved outside its installation directory. Refer to the Privacy Policy for information about local data storage and deletion.
+
+## 10. Governing Law and Disputes
+
+[To be completed after confirming the publisher's legal jurisdiction and obtaining legal review.]
+
+Nothing in this section limits mandatory consumer protections or legal rights that apply in your country or region.
+
+## 11. General Terms
+
+If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions will continue to apply to the extent permitted by law.
+
+This Agreement, applicable Microsoft Store terms, and relevant third-party license terms govern the applicable aspects of your use of the Software.
+
+If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions will continue to apply to the extent permitted by law.
+
+This Agreement, applicable Microsoft Store terms, and relevant third-party license terms govern the applicable aspects of your use of the Software.
+
+No failure or delay by Publisher in exercising any right under this Agreement will constitute a waiver of that right.
+
+You may not transfer or assign your rights under this Agreement without Publisher's prior written consent, except where applicable law permits otherwise.
+
+Nothing in this Agreement limits any rights or protections that cannot legally be waived or restricted.
+
+## 12. Contact Information
+
+For questions about this Agreement or the Software, contact:
+
+**Publisher:** Harshvardhan Yadav   
+**Legal contact:** VectoTask@gmail.com  
+**Support:** VectoTask@gmail.com
 
 ---
 
-**Internal notes — remove before publication:** The source readme describes the app as “offline-first,” but source includes Store update queries and a TCP connectivity check; avoid “strictly offline” and “no transmission” claims. Source review did not execute/capture a release build or inspect all transitive binaries. App version and publisher identity are inconsistent/incomplete across files; see Evidence Register.
+**Document version:** 1.0
+**Last updated:** 6 November 2026
