@@ -1,75 +1,190 @@
 # VectoTask Privacy Policy
 
 **Effective date:** [DATE]  
-**App version covered:** [SUBMITTED VERSION]  
-**Publisher / responsible entity:** [LEGAL PUBLISHER NAME AS SHOWN IN PARTNER CENTER]  
-**Privacy contact:** [REAL EMAIL OR HTTPS CONTACT PAGE]  
-**Markets:** [COUNTRIES/REGIONS]
+**Last updated:** [DATE]  
+**App version covered:** [APP VERSION]  
+**Publisher / responsible entity:** [PUBLISHER NAME AS SHOWN IN MICROSOFT PARTNER CENTER]  
+**Privacy contact:** [MONITORED EMAIL ADDRESS OR HTTPS CONTACT PAGE]  
+**Markets:** [COUNTRIES OR REGIONS WHERE THE APP IS DISTRIBUTED]
 
 ## 1. About this policy
 
-This policy explains information handling by **VectoTask**, a Windows desktop application for creating and running local workflow automations. The reviewed project describes VectoTask as formerly named FlowPilot. This policy covers the app and its publisher, [PUBLISHER NAME], for the [Microsoft Store/MSIX version — confirm] version. Microsoft independently handles information under Microsoft's own terms when you use Microsoft Store services; this policy does not replace Microsoft's privacy statement.
+This Privacy Policy explains how **VectoTask**, a Windows desktop application for creating and running workflow automations, handles information.
+
+This policy applies to the VectoTask version distributed as an MSIX package through the Microsoft Store. If other editions, such as a standalone or development build, are distributed, their information-handling behavior may differ.
+
+VectoTask is designed to store its workflow information and application records locally on your device. However, some features communicate with Microsoft Store services or other network destinations, as described below.
+
+Microsoft independently handles information when you use Microsoft Store and related Windows services. Microsoft's handling of that information is governed by Microsoft's own privacy terms and policies. This policy does not replace Microsoft's privacy statement.
 
 ## 2. Information VectoTask stores on your device
 
-The reviewed source uses SQLite and local files. Depending on your app use, the database can include:
+Depending on how you use the application, VectoTask may store the following information locally:
 
-- Workflows and visual workflow graphs, including trigger settings, conditions, actions, node configuration, names and descriptions.
-- Workflow drafts and autosaves, including graph and view state.
-- App settings, theme/layout preferences, automation preferences, and Store update dismissal settings.
-- Keyboard shortcuts and their configured actions.
-- Activity records such as workflow name, trigger type/details, status, actions performed, error messages, start/end times, and duration.
-- Application logs. Logs can include operational messages, process names or workflow details, file paths, errors, and diagnostic/environment information.
+- **Workflows:** Workflow definitions and visual workflow graphs, including triggers, conditions, actions, node configuration, names, and descriptions.
+- **Drafts and autosaves:** Workflow drafts, saved graph information, and related view or editing state.
+- **Application settings:** Theme and layout preferences, automation preferences, and Store update dismissal settings.
+- **Keyboard shortcuts:** Configured shortcuts and their associated actions.
+- **Activity records:** Workflow names, trigger information, execution status, actions performed, error messages, start and end times, and execution duration.
+- **Application logs:** Operational messages, process names, workflow-related details, file paths, errors, and diagnostic or environment information.
 
-The database and log files are stored locally under the environment-specific application data directory, normally `%LOCALAPPDATA%\VectoTask\msix` for the MSIX build, `%LOCALAPPDATA%\VectoTask\standalone` for the standalone build, and `%LOCALAPPDATA%\VectoTask\dev` for development. If `%LOCALAPPDATA%` is unavailable, the source uses a folder under the current user's home directory. The app creates database, drafts, logs, backups, and exports subfolders. Existing legacy VectoTask/FlowPilot data may be migrated from `~/.vectotask` or `~/.flowpilot` into the active data directory, with a migration backup.
+For the MSIX version, the reviewed source uses the following application data location:
 
-The source does not show encryption of the SQLite database, logs, or backup archives. Treat local app data and exported backup ZIP files as ordinary files accessible to the Windows user and anyone else who can access that Windows account/device. Do not store secrets in workflows unless you accept that risk.
+`%LOCALAPPDATA%\VectoTask\msix`
 
-The app has user-requested export/import and backup behavior. The source does not establish an automatic expiry period for these records. Activity history can be cleared in the app; deleting an individual workflow/draft is supported. Logs, backups, and old exports may remain until the user deletes them or other cleanup behavior is confirmed. Uninstall behavior for data stored outside the installation directory has not been verified; back up or manually remove app data if desired, after confirming what will be lost.
+The standalone and development builds use separate locations:
+
+- Standalone: `%LOCALAPPDATA%\VectoTask\standalone`
+- Development: `%LOCALAPPDATA%\VectoTask\dev`
+
+If `%LOCALAPPDATA%` is unavailable, the application may use a folder under the current Windows user's home directory.
+
+The application may create subfolders for its database, drafts, logs, backups, and exports. Existing legacy VectoTask or FlowPilot data may also be migrated from `~/.vectotask` or `~/.flowpilot` into the active data directory, with a migration backup.
+
+**Local storage security:** The reviewed source does not show encryption of the SQLite database, logs, or backup archives. These files should therefore be treated as ordinary files accessible to the Windows user and anyone else who can access that Windows account or device. Avoid storing sensitive secrets in workflows unless you accept the associated risks.
+
+VectoTask provides user-requested data export, import, and backup features. Activity history can be cleared in the application, and individual workflows or drafts can be deleted. The reviewed source does not establish a general automatic expiry period for these records. Logs, backups, and exported files may remain until deleted by the user or removed through other confirmed cleanup behavior.
+
+Uninstalling the application may not automatically delete information stored outside its installation directory. If you want to remove local application data, review the relevant data folders and back up anything you want to keep before deleting files.
 
 ## 3. Information used by local automation features
 
-When enabled/configured, local automation features may inspect running process names and state, keyboard shortcuts, selected files/folders, active application/window information, and system state to trigger workflows or perform actions. The project source includes process monitoring, global hotkeys, window/app discovery, file/folder actions, desktop startup integration, and workflow activity logging. These operations are performed on the device by the app, but resulting workflow details may be written to the local database or log as described above.
+When enabled and configured, VectoTask's automation features may inspect or interact with information on your device, including:
 
-Automations can launch or close programs, open URLs in the default browser, manipulate keyboard/mouse input, and act on user-selected files or folders. You choose workflow settings and are responsible for their effects. Review workflows before enabling automatic execution.
+- Running process names and process state.
+- Configured keyboard shortcuts.
+- Files and folders selected by you.
+- Active application or window information.
+- Relevant system state used by automation triggers.
+
+The reviewed project source includes process monitoring, global hotkeys, window and application discovery, file and folder actions, desktop startup integration, and workflow activity logging.
+
+These operations are performed on your device by the application. Resulting workflow information and activity details may be written to the local database or application logs described in Section 2.
+
+Depending on your configuration, workflows may launch or close programs, open URLs in your default browser, simulate keyboard or mouse input, or act on files and folders you have selected.
+
+You are responsible for reviewing your workflows and understanding their effects before enabling automatic execution.
 
 ## 4. Network communication
 
-The reviewed source includes these network-related behaviors:
+VectoTask includes certain features that may communicate over a network.
 
-- **Connectivity condition:** When a workflow evaluates the internet-connectivity condition, the app attempts a TCP connection to `8.8.8.8` on port 53 with a short timeout. This contacts Google's public DNS service to determine whether a connection succeeds. The source does not send workflow content as part of this check. Network provider logs/metadata may be governed by that provider's terms.
-- **Microsoft Store update discovery:** In an MSIX installation, the app calls Windows `StoreContext` APIs after launch and periodically (the code sets a 24-hour timer) to ask whether app/package updates are available. The request is handled through Windows/Microsoft Store services. The project source does not specify the precise account/device/package data Microsoft processes; consult Microsoft's privacy materials. The code also opens a Microsoft Store URI when a user chooses to view the app in the Store. Standalone builds skip these Store update checks.
-- **User-configured HTTP/webhook nodes:** Definitions for HTTP request and webhook nodes exist in the workflow registry, but the reviewed source did not reveal a working request executor for them. Therefore this policy does not represent that these nodes currently transmit payloads. Their status and behavior must be confirmed against the exact release package; if executable, this section must be revised to explain recipients and data sent.
-- **Other destinations:** The app can open URLs supplied by the user in the default web browser. Any resulting browser/service communication is controlled by the browser and destination service. No app-server analytics or telemetry endpoint was identified in the reviewed source, but bundled components and the final release package must still be audited before making a broader “no telemetry” claim.
+### 4.1 Internet connectivity checks
 
-## 5. Purposes and sharing
+When a workflow evaluates an internet-connectivity condition, the reviewed source attempts a TCP connection to `8.8.8.8` on port `53` with a short timeout.
 
-Local information is used to provide the app's workflow, settings, activity history, logging, backup/restore, and update-notification features. The source review found no VectoTask-operated cloud account or service. Microsoft Store update queries and the connectivity check described above are network communications. If user-configured request integrations become executable, their external services will be selected by the user and require separate disclosure here.
+This address belongs to Google's public DNS service and is used by the connectivity check to determine whether a connection succeeds. The reviewed code does not include workflow content in this connectivity-check request.
 
-The publisher does not receive the locally stored workflow/database contents through a publisher-operated server in the reviewed source. This statement is limited to the reviewed code and does not describe information a user deliberately sends to an external service through a workflow or browser, or information handled by Microsoft Store/Windows.
+Network providers may process connection metadata under their own terms and policies.
+
+### 4.2 Microsoft Store update discovery
+
+In the MSIX installation, VectoTask uses Windows `StoreContext` APIs after application launch and periodically thereafter to check whether application or package updates are available. The reviewed code sets a 24-hour timer for periodic checks.
+
+These requests are handled through Windows and Microsoft Store services. The precise account, device, package, or other information processed by Microsoft is determined by Microsoft's services and is not fully specified by the reviewed VectoTask source.
+
+VectoTask may also open a Microsoft Store URI when you choose to view the application in the Store.
+
+Standalone builds do not perform the Store update checks described above.
+
+For information about Microsoft's handling of information, consult Microsoft's applicable privacy statement and terms.
+
+### 4.3 User-configured HTTP or webhook features
+
+The reviewed project contains definitions for HTTP request and webhook workflow nodes. However, the source review did not establish that these nodes currently have a functioning request executor.
+
+Accordingly, this policy does not claim that these nodes currently transmit workflow payloads. Their functionality and behavior must be verified against the exact released application package. If they become executable, this policy should be updated to explain what information may be sent, to which recipients, and for what purpose.
+
+### 4.4 Browser and other external services
+
+VectoTask can open URLs supplied by you in your default web browser. Any resulting communication is handled by the browser and the destination website or service, under their respective terms and privacy policies.
+
+The reviewed source did not identify a VectoTask-operated analytics or telemetry endpoint. This observation is limited to the source reviewed and should not be interpreted as a guarantee about every bundled component or future release.
+
+## 5. Purposes and sharing of information
+
+VectoTask uses locally stored information to provide its application features, including:
+
+- Creating, editing, and running workflows.
+- Saving application settings and preferences.
+- Maintaining workflow activity history and application logs.
+- Supporting backup, restore, import, and export.
+- Checking for Microsoft Store updates in the MSIX version.
+
+The reviewed source did not identify a VectoTask-operated cloud account or service that receives locally stored workflow databases or application logs.
+
+The publisher does not receive the local workflow and database contents through a publisher-operated server in the reviewed source. This statement is limited to the reviewed code and does not cover information you deliberately send to an external service through a workflow, browser, or other integration, or information processed by Microsoft Store and Windows services.
+
+VectoTask does not control the privacy practices of Microsoft, your network provider, websites, or other external services.
 
 ## 6. Retention and deletion
 
-Local records remain on the device until deleted by the user or otherwise removed. The reviewed code does not define a general retention schedule or automatic log rotation. Users can clear the app's activity history and delete workflows/drafts in the app; users can also export/import data. To request deletion of app data, [PROVIDE VERIFIED IN-APP OR FILESYSTEM INSTRUCTIONS AND CONTACT]. Confirm installer uninstall behavior and any retained app-data behavior before publication.
+VectoTask's local records generally remain on your device until you delete them or they are otherwise removed.
+
+The reviewed source does not define a general retention schedule or automatic log-rotation period.
+
+Depending on the feature, you can:
+
+- Clear activity history using the application's controls.
+- Delete individual workflows or drafts.
+- Export information for your own backup.
+- Import previously exported information.
+
+Logs, backups, and exported files may remain on your device after you delete a workflow or clear activity history.
+
+To remove local VectoTask data, review the application's data folders described in Section 2. Back up any information you want to retain before deleting these files.
+
+For privacy questions or requests concerning information handled by the publisher, contact [PRIVACY CONTACT EMAIL OR HTTPS CONTACT PAGE]. Because the reviewed application primarily stores workflow information locally, the publisher may not have access to a copy of your local workflow database.
 
 ## 7. Security
 
-VectoTask stores the described data in local SQLite files and logs. The source reviewed does not show encryption at rest, a cloud backup, or a publisher server storing these records. Protect your Windows account and device, and handle exported backup files carefully. No method of storage or transmission can be guaranteed completely secure.
+VectoTask stores the information described in this policy in local SQLite database files, logs, and related files on your device.
 
-## 8. Your choices and rights
+The reviewed source does not show encryption at rest, a publisher-operated cloud backup, or a publisher server storing these local records.
 
-You choose whether to create workflows, configure automatic triggers, export backups, and use external URLs. You can disable automation and clear activity history using app controls. For privacy requests concerning information handled by the publisher, contact [PRIVACY CONTACT]. Because the reviewed source shows local storage and no publisher-operated account/service, the publisher may not possess a copy of your local workflow data. Rights and remedies depend on your location; [PUBLISHER: add required local rights and regulator contact information for target markets].
+You are responsible for protecting your Windows account and device and for handling exported backup files carefully.
 
-## 10. International processing
+No method of electronic storage or transmission can be guaranteed to be completely secure.
 
-VectoTask's reviewed workflow database and logs are stored on the user's device. Microsoft Store update discovery and user-chosen external services may involve processing outside the user's country. [ADD verified destinations and safeguards as required for target markets.]
+## 8. Your choices and privacy rights
 
-## 11. Changes and contact
+You decide whether to create workflows, configure automatic triggers, enable automation features, export backups, and open external URLs.
 
-We may update this policy to reflect changes in the app or applicable requirements. The current policy will be available at [PUBLIC HTTPS PRIVACY POLICY URL]. [DESCRIBE notice for material changes, if applicable.]
+You can use the application's available controls to disable automation and clear activity history.
 
-Privacy questions: **[PUBLISHER LEGAL NAME]**, [POSTAL ADDRESS IF REQUIRED], [PRIVACY EMAIL], [HTTPS SUPPORT PAGE].
+For privacy requests concerning information handled by the publisher, contact:
 
----
+**Privacy contact:** [PRIVACY EMAIL OR HTTPS CONTACT PAGE]
 
-**Internal notes — remove before publication:** The source readme describes the app as “offline-first,” but source includes Store update queries and a TCP connectivity check; avoid “strictly offline” and “no transmission” claims. Source review did not execute/capture a release build or inspect all transitive binaries. App version and publisher identity are inconsistent/incomplete across files; see Evidence Register.
+Because VectoTask's reviewed source shows local storage and no publisher-operated account or cloud service, the publisher may not possess a copy of your local workflow data.
+
+Depending on your country or region, you may have privacy rights such as requesting access to, correction of, or deletion of personal information, or raising an objection or complaint with a relevant privacy regulator. The availability and scope of these rights depend on applicable law.
+
+[ADD ANY ADDITIONAL PRIVACY RIGHTS, REQUEST PROCEDURES, AND REGULATOR CONTACT DETAILS REQUIRED FOR THE MARKETS WHERE THE APP IS DISTRIBUTED.]
+
+## 9. International processing
+
+VectoTask's reviewed workflow database and application logs are stored locally on the user's device.
+
+However, Microsoft Store update discovery and network communications initiated by connectivity checks or user-selected external services may involve processing by providers operating in countries other than the user's own.
+
+The locations, purposes, and safeguards associated with Microsoft's processing are governed by Microsoft's applicable privacy terms. The handling of information by other external services is governed by those services' own policies.
+
+[ADD ANY ADDITIONAL INTERNATIONAL TRANSFER INFORMATION OR SAFEGUARDS REQUIRED BY APPLICABLE LAW.]
+
+## 10. Changes to this policy and contact
+
+We may update this Privacy Policy when VectoTask's features, information-handling practices, or applicable requirements change.
+
+The latest version of this policy will be made available at:
+
+[PUBLIC HTTPS PRIVACY POLICY URL]
+
+The **Last updated** date at the beginning of this policy indicates when it was most recently revised. Where required, we will provide additional notice of material changes.
+
+For privacy questions or requests, contact:
+
+**Publisher:** [PUBLISHER NAME]  
+**Privacy contact:** [MONITORED PRIVACY EMAIL]  
+**Support page:** [HTTPS SUPPORT PAGE]  
+**Postal address:** [INCLUDE IF REQUIRED BY APPLICABLE LAW]
