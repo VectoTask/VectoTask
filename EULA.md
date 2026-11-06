@@ -49,7 +49,7 @@ https://VectoTask.github.io/VectoTask/Third-Party-Notices
 
 Your use of the Software is also subject to the VectoTask Privacy Policy:
 
-https://VectoTask.github.io/VectoTask/Privacy-Policy
+https://github.com/VectoTask/VectoTask/blob/main/Privacy-Policy.md
 
 The Software stores certain application information locally, including workflows, settings, activity records, and logs. Some versions may also communicate with external services for functions such as Microsoft Store update discovery and connectivity checks.
 
