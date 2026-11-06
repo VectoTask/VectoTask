@@ -45,13 +45,13 @@ The Software may include third-party software and resources governed by separate
 
 Third-party license information is available at:
 
-https://github.com/VectoTask/VectoTask/blob/main/Third-Party-Notices.md
+[Third-Party Notices](https://github.com/VectoTask/VectoTask/blob/main/Third-Party-Notices.md)
 
 ## 4. Privacy and Local Data
 
 Your use of the Software is also subject to the VectoTask Privacy Policy:
 
-https://github.com/VectoTask/VectoTask/blob/main/Privacy-Policy.md
+[Privacy Policy](https://github.com/VectoTask/VectoTask/blob/main/Privacy-Policy.md)
 
 The Software stores certain application information locally, including workflows, settings, activity records, and logs. Some versions may also communicate with external services for functions such as Microsoft Store update discovery and connectivity checks.
 
