@@ -43,7 +43,7 @@ The Software may include third-party software and resources governed by separate
 
 Third-party license information is available at:
 
-https://VectoTask.github.io/VectoTask/Third-Party-Notices
+https://github.com/VectoTask/VectoTask/blob/main/Third-Party-Notices.md
 
 ## 4. Privacy and Local Data
 
