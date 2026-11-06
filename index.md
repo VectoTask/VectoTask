@@ -7,9 +7,9 @@ Welcome to the official VectoTask legal information page.
 
 ## Legal Documents
 
-- [Privacy Policy](Privacy-Policy.md)
-- [End User License Agreement](EULA.md)
-- [Third-Party Notices](Third-Party-Notices.md)
+- [Privacy Policy](https://github.com/VectoTask/VectoTask/blob/main/Privacy-Policy.md)
+- [End User License Agreement](https://github.com/VectoTask/VectoTask/blob/main/EULA.md)
+- [Third-Party Notices](https://github.com/VectoTask/VectoTask/blob/main/Third-Party-Notices.md)
 
 ## Contact Us
 
