@@ -142,4 +142,5 @@ For questions about this Agreement or the Software, contact:
 ---
 
 **Document version:** 1.0
+
 **Last updated:** 6 November 2026
