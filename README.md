@@ -19,12 +19,9 @@ Complete the remaining fields and verify all disclosures against the exact relea
 
 The following documents are included in this repository:
 
-1. [Privacy Policy](Privacy-Policy.md)
-2. [End User License Agreement (EULA)](EULA.md)
-3. [Third-Party Notices and Licence Register](Third-Party-Notices.md)
-4. [Microsoft Store Compliance Checklist](Store-Compliance-Checklist.md)
-5. [Evidence and Unresolved Facts Register](Evidence-Register.md)
-6. [Publication Readiness Guide](Publication-Readiness-Guide.md)
+1. [Privacy Policy](https://github.com/VectoTask/VectoTask/blob/main/Privacy-Policy.md)
+2. [End User License Agreement (EULA)](https://github.com/VectoTask/VectoTask/blob/main/EULA.md)
+3. [Third-Party Notices and Licence Register](https://github.com/VectoTask/VectoTask/blob/main/Third-Party-Notices.md)
 
 ---
 
