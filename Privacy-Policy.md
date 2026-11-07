@@ -1,12 +1,12 @@
 # VectoTask Privacy Policy
 
-**Effective date:** [DATE] 
+**Effective date:** 7 November 2026
 
 **Last updated:** 7 November 2026 
 
 **App version covered:** 1.0.6  
 
-**Publisher / responsible entity:** [PUBLISHER NAME AS SHOWN IN MICROSOFT PARTNER CENTER]  
+**Publisher / responsible entity:** Harshvardhan Yadav  
 
 **Privacy contact:** VectoTask@gmail.com  
 
