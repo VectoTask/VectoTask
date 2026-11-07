@@ -139,7 +139,7 @@ Logs, backups, and exported files may remain on your device after you delete a w
 
 To remove local VectoTask data, review the application's data folders described in Section 2. Back up any information you want to retain before deleting these files.
 
-For privacy questions or requests concerning information handled by the publisher, contact [PRIVACY CONTACT EMAIL OR HTTPS CONTACT PAGE]. Because the reviewed application primarily stores workflow information locally, the publisher may not have access to a copy of your local workflow database.
+For privacy questions or requests concerning information handled by the publisher, contact **VectoTask@gmail.com**. Because the reviewed application primarily stores workflow information locally, the publisher may not have access to a copy of your local workflow database.
 
 ## 7. Security
 
@@ -159,23 +159,27 @@ You can use the application's available controls to disable automation and clear
 
 For privacy requests concerning information handled by the publisher, contact:
 
-**Privacy contact:** [PRIVACY EMAIL OR HTTPS CONTACT PAGE]
+**Privacy contact:** VectoTask@gmail.com
 
 Because VectoTask's reviewed source shows local storage and no publisher-operated account or cloud service, the publisher may not possess a copy of your local workflow data.
 
 Depending on your country or region, you may have privacy rights such as requesting access to, correction of, or deletion of personal information, or raising an objection or complaint with a relevant privacy regulator. The availability and scope of these rights depend on applicable law.
 
-[ADD ANY ADDITIONAL PRIVACY RIGHTS, REQUEST PROCEDURES, AND REGULATOR CONTACT DETAILS REQUIRED FOR THE MARKETS WHERE THE APP IS DISTRIBUTED.]
+**Making a privacy request**
+
+To submit a privacy-related request, contact us at **vectotask@gmail.com**. Please describe your request and provide enough information for us to understand and respond to it. We may ask for reasonable information to verify your identity before processing a request.
+
+We will review and respond to requests in accordance with applicable privacy laws. If you believe your privacy rights have not been respected, you may also have the right to contact the relevant privacy regulator in your country or region.
 
 ## 9. International processing
 
-VectoTask's reviewed workflow database and application logs are stored locally on the user's device.
+VectoTask's workflow database and application logs are stored locally on the user's device.
 
-However, Microsoft Store update discovery and network communications initiated by connectivity checks or user-selected external services may involve processing by providers operating in countries other than the user's own.
+However, Microsoft Store update checks and network communications initiated by connectivity checks or user-selected external services may involve processing by providers operating in countries other than the user's own.
 
-The locations, purposes, and safeguards associated with Microsoft's processing are governed by Microsoft's applicable privacy terms. The handling of information by other external services is governed by those services' own policies.
+Microsoft's handling of information through Microsoft Store and Windows services is governed by Microsoft's applicable privacy terms and policies. The handling of information by other external services is governed by those services' respective privacy policies.
 
-[ADD ANY ADDITIONAL INTERNATIONAL TRANSFER INFORMATION OR SAFEGUARDS REQUIRED BY APPLICABLE LAW.]
+The publisher does not independently determine or control the locations where Microsoft or other external service providers process information. Where applicable, international processing and transfers are subject to the privacy laws and safeguards that apply to the relevant provider and service.
 
 ## 10. Changes to this policy and contact
 
@@ -189,10 +193,8 @@ The **Last updated** date at the beginning of this policy indicates when it was 
 
 For privacy questions or requests, contact:
 
-**Publisher:** [PUBLISHER NAME]  
-**Privacy contact:** [MONITORED PRIVACY EMAIL]  
-**Support page:** [HTTPS SUPPORT PAGE]  
-**Postal address:** [INCLUDE IF REQUIRED BY APPLICABLE LAW]
+**Publisher:** [Harshvardhan Yadav  
+**Privacy contact:** vectotask@gmail.com  
 
 ---
 © 2026 Harshvardhan Yadav. All rights reserved.
