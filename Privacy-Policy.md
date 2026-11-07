@@ -71,6 +71,7 @@ Depending on your configuration, workflows may launch or close programs, open UR
 
 You are responsible for reviewing your workflows and understanding their effects before enabling automatic execution.
 
+---
 ## Artificial Intelligence and Generative AI
 
 VectoTask's use of artificial intelligence and generative AI technologies, if any, depends on the features included in the application.
