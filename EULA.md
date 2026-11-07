@@ -136,8 +136,7 @@ Nothing in this Agreement limits any rights or protections that cannot legally b
 For questions about this Agreement or the Software, contact:
 
 **Publisher:** Harshvardhan Yadav   
-**Legal contact:** VectoTask@gmail.com  
-**Support:** VectoTask@gmail.com
+**Legal contact and Support :** VectoTask@gmail.com  
 
 ---
 
