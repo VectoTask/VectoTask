@@ -131,3 +131,6 @@ Confirm the current requirements directly in Partner Center when preparing the s
 **VectoTask**
 
 *Automate. Simplify. Achieve.*
+
+---
+© 2026 Harshvardhan Yadav. All rights reserved.
