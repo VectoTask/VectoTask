@@ -32,6 +32,14 @@ Third-party components may differ between development builds and distributed pac
 
 The final notices should therefore reflect the components actually redistributed with the specific VectoTask release, rather than assuming that every development dependency is shipped to customers.
 
+---
+AI-Related Third-Party Services
+
+If future versions of VectoTask incorporate third-party artificial intelligence or generative AI services, the applicable providers and their relevant license terms, notices, or service conditions will be identified where required.
+
+Use of such services may also be subject to the respective providers' terms and policies.
+
+---
 ## Contact
 
 For questions about third-party notices, contact:
