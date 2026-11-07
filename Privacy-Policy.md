@@ -187,13 +187,13 @@ We may update this Privacy Policy when VectoTask's features, information-handlin
 
 The latest version of this policy will be made available at:
 
-[PUBLIC HTTPS PRIVACY POLICY URL]
+[[PUBLIC HTTPS PRIVACY POLICY]](https://github.com/VectoTask/VectoTask/blob/main/Privacy-Policy.md)
 
 The **Last updated** date at the beginning of this policy indicates when it was most recently revised. Where required, we will provide additional notice of material changes.
 
 For privacy questions or requests, contact:
 
-**Publisher:** [Harshvardhan Yadav  
+**Publisher:** Harshvardhan Yadav  
 **Privacy contact:** vectotask@gmail.com  
 
 ---
