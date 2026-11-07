@@ -71,6 +71,14 @@ Depending on your configuration, workflows may launch or close programs, open UR
 
 You are responsible for reviewing your workflows and understanding their effects before enabling automatic execution.
 
+## Artificial Intelligence and Generative AI
+
+VectoTask's use of artificial intelligence and generative AI technologies, if any, depends on the features included in the application.
+
+If a future version introduces features that use live generative AI models to create content in response to user inputs, this Privacy Policy will be updated to explain the relevant data processing practices, including any information shared with AI service providers.
+
+Where applicable, users will also be provided with a means to report inappropriate AI-generated content to the developer.
+
 ## 4. Network communication
 
 VectoTask includes certain features that may communicate over a network.
