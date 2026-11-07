@@ -131,6 +131,7 @@ You may not transfer or assign your rights under this Agreement without Publishe
 
 Nothing in this Agreement limits any rights or protections that cannot legally be waived or restricted.
 
+---
 If VectoTask provides features that use artificial intelligence or generative AI technologies, users acknowledge that AI-generated content may be inaccurate, incomplete, or unsuitable for a particular purpose. Users are responsible for reviewing such content before relying on it or using it in workflows or other activities. Users may report inappropriate AI-generated content through the reporting mechanism provided in the application or through the developer's designated support contact. The developer may review such reports and take appropriate action. Where AI features rely on third-party services, their applicable terms and policies may also apply.
 
 ## 12. Contact Information
