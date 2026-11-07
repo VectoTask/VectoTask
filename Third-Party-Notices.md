@@ -38,3 +38,6 @@ For questions about third-party notices, contact:
 
 **VectoTask@gmail.com**
 
+---
+© 2026 Harshvardhan Yadav. All rights reserved.
+
