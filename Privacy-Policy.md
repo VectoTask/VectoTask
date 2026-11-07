@@ -1,11 +1,11 @@
 # VectoTask Privacy Policy
 
 **Effective date:** [DATE]  
-**Last updated:** [DATE]  
-**App version covered:** [APP VERSION]  
+**Last updated:** 7 November 2026 
+**App version covered:** 1.0.6  
 **Publisher / responsible entity:** [PUBLISHER NAME AS SHOWN IN MICROSOFT PARTNER CENTER]  
-**Privacy contact:** [MONITORED EMAIL ADDRESS OR HTTPS CONTACT PAGE]  
-**Markets:** [COUNTRIES OR REGIONS WHERE THE APP IS DISTRIBUTED]
+**Privacy contact:** VectoTask@gmail.com  
+**Markets:** Worldwide
 
 ## 1. About this policy
 
