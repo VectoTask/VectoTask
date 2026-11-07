@@ -1,7 +1,5 @@
 # VectoTask Third-Party Notices
 
-**Version:** Draft — pending final package verification
-
 VectoTask uses or references third-party software and resources. Their respective authors and licensors retain their rights to those components. This document identifies components declared in the project materials; it does not confirm that every listed component is included in every VectoTask distribution.
 
 The exact versions, transitive dependencies, and contents of the submitted Microsoft Store package must be verified before distribution. The project includes a `THIRD_PARTY_LICENSES.md` file that is intended to provide license texts and notices.
