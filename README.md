@@ -1,8 +1,6 @@
 
 # VectoTask — Microsoft Store Legal Package
 
-**Review draft — Not ready for publication**
-
 Last updated: 6 November 2026  
 Application version reviewed: 1.0.6  
 Project identity: VectoTask (formerly FlowPilot)
