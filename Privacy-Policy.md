@@ -32,6 +32,7 @@ Depending on how you use the application, VectoTask may store the following info
 - **Keyboard shortcuts:** Configured shortcuts and their associated actions.
 - **Activity records:** Workflow names, trigger information, execution status, actions performed, error messages, start and end times, and execution duration.
 - **Application logs:** Operational messages, process names, workflow-related details, file paths, errors, and diagnostic or environment information.
+- **Automations:** Any automations created  and its activity will be stored locally on the device 
 
 For the MSIX version, the reviewed source uses the following application data location:
 
