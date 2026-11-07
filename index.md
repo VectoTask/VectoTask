@@ -19,4 +19,4 @@ VectoTask@gmail.com
 
 ---
 
-© 2026 VectoTask. All rights reserved.
+© 2026 Harshvardhan Yadav. All rights reserved.
