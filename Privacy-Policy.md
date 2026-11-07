@@ -188,3 +188,6 @@ For privacy questions or requests, contact:
 **Privacy contact:** [MONITORED PRIVACY EMAIL]  
 **Support page:** [HTTPS SUPPORT PAGE]  
 **Postal address:** [INCLUDE IF REQUIRED BY APPLICABLE LAW]
+
+---
+© 2026 Harshvardhan Yadav. All rights reserved.
